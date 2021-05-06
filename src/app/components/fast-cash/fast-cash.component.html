@@ -1,0 +1,26 @@
+<div>
+<div class="fast-header">
+    <span class ="fast-header-txt">{{'ClickAmountProceed' | translate}}</span>
+</div>
+<div class="btn-container">
+    <button mat-fab color="primary" class="fast-circle" (click)="fastAmount(100)" aria-label="100">
+        <span class="amount-txt">AED 100</span>
+    </button>
+    <button mat-fab color="primary" class="fast-circle" (click)="fastAmount(200)" aria-label="200">
+        <span class="amount-txt">AED 200</span>
+    </button>
+    <button mat-fab color="primary" class="fast-circle" (click)="fastAmount(500)" aria-label="500">
+        <span class="amount-txt">AED 500</span>
+    </button>
+    <button mat-fab color="primary" class="fast-circle" (click)="fastAmount(1000)" aria-label="1000">
+        <span class="amount-txt">AED 1000</span>
+    </button>
+
+    <button mat-fab color="primary" (click)="fastAmount(2000)"class="fast-circle" aria-label="2000">
+        <span class="amount-txt">AED 2000</span>
+    </button>
+    <button mat-fab color="primary" (click)="fastAmount(5000)" class="fast-circle" aria-label="5000">
+        <span class="amount-txt">AED 5000</span>
+    </button>
+  </div>
+</div>

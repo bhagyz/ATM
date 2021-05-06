@@ -1,0 +1,18 @@
+.welcome-div {
+    display: flex;
+    justify-content: center;
+    margin: 220px 0px 0px 0px;
+    .welcome-txt {
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+        font-size: 5vw;
+        font-weight: 600;
+        color: #0a1271;
+    }
+}
+.icon-div {
+    display: flex;
+    justify-content: center;
+    color: blue;
+}

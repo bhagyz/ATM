@@ -1,0 +1,29 @@
+<div class="withdraw-user-div">
+    <mat-card class="withdraw-card">
+        <mat-card-header>
+            <mat-card-title>{{'Hello' | translate}} , Alfreds Futterkiste</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div><span class="withdraw-card-txt">{{'AccountNumber' | translate}}</span> : <span class="withdraw-card-txt">9999999999</span></div>
+            <div><span class="withdraw-card-txt">{{'AccountType' | translate}}</span> : <span class="withdraw-card-txt">Savings</span></div>
+            <div><span class="withdraw-card-txt">{{'Balance' | translate}}</span> : <span class="withdraw-card-txt">10000 AED</span></div>
+        </mat-card-content>
+    </mat-card>
+</div>
+<div class="login-div">
+    <div class="login-form-div">
+    <h1 class="header-label">{{'EnterAmount' | translate}}</h1>
+    <form class="login-form">
+        <mat-form-field appearance="outline"  class="login-full-width">
+          <input #amount matInput type="number" [formControl]="withdrawFormControl" [errorStateMatcher]="matcher">
+          <mat-error *ngIf="withdrawFormControl.hasError('maxLength')">
+            {{'validAmount' | translate}}
+          </mat-error>
+          <mat-error *ngIf="withdrawFormControl.hasError('required')">
+            {{'Amountis' | translate}} <strong>{{'required' |translate}}</strong>
+          </mat-error>
+        </mat-form-field>
+      </form> 
+        <button  mat-raised-button color="primary" [disabled]="!withdrawFormControl.valid"(click)="withdrawAmount(amount.value)">{{'Proceed' | translate}}</button>
+    </div>       
+</div>

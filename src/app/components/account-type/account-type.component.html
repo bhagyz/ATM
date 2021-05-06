@@ -1,0 +1,21 @@
+<div class="account-div">
+<div class="fast-header">
+    <span class="fast-header-txt">{{'SelectAccountType' | translate}}</span>
+</div>
+<div class="home-div">
+    <mat-card class="task-card" (click)="navigate('Current')">
+        <div>
+            <i class="fa fa-money fa-5x task-icon" aria-hidden="true"></i>
+            <span class="task-txt">{{'Current' | translate}}</span>
+        </div>
+    </mat-card>
+    <mat-card class="task-card" (click)="navigate('Savings')">
+        <div>
+
+            <i class="fa fa-credit-card fa-5x task-icon" aria-hidden="true"></i>
+
+            <span class="task-txt">{{'Savings' | translate}}</span>
+        </div>
+    </mat-card>
+</div>
+</div>

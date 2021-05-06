@@ -1,0 +1,59 @@
+<div class="withdraw-user-div">
+    <mat-card class="withdraw-card">
+        <mat-card-header>
+            <mat-card-title>{{'Hello' | translate}} , Alfreds Futterkiste</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div><span class="withdraw-card-txt">{{'AccountNumber' | translate}}</span> : <span
+                    class="withdraw-card-txt">999999999999</span></div>
+            <div><span class="withdraw-card-txt">{{'AccountType' | translate}}</span> : <span
+                    class="withdraw-card-txt">Savings</span></div>
+            <div><span class="withdraw-card-txt">{{'Balance' | translate}}</span> : <span
+                    class="withdraw-card-txt">10000 AED</span></div>
+        </mat-card-content>
+    </mat-card>
+</div>
+<div class="login-div">
+    <div>
+        <h1 class="header-label">{{'ChooseAccount' | translate}}</h1>
+        <mat-radio-group class="account-radio" [(ngModel)]="selection" aria-label="Select an option">
+            <mat-radio-button color="primary" class="radio-txt" [checked]="true" value="my-account">{{'ToMyAccount' | translate}}
+            </mat-radio-button>
+            <mat-radio-button color="primary" class="radio-txt" value="other-account">{{'OtherAccount' | translate}}</mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <div class="login-form-div">
+        <ng-container *ngIf="selection == 'other-account'">
+            <h1 class="header-label">{{'EnterAccountNumber' | translate}}</h1>
+            <form class="login-form">
+                <mat-form-field appearance="outline" class="login-full-width">
+                    <input #amount matInput type="number" [formControl]="accountFormControl"
+                        [errorStateMatcher]="matcher">
+                    <mat-error *ngIf="accountFormControl.hasError('maxLength')">
+                        {{'validAccountNumber' | translate}}
+                    </mat-error>
+                    <mat-error *ngIf="accountFormControl.hasError('required')">
+                        {{'AccountNumberis' | translate}} <strong>{{'required' |translate}}</strong>
+                    </mat-error>
+                </mat-form-field>
+            </form>
+        </ng-container>
+        <ng-container>
+            <h1 class="header-label">{{'EnterAmount' | translate}}</h1>
+            <form class="login-form">
+                <mat-form-field appearance="outline" class="login-full-width">
+                    <input #amount matInput type="number" [formControl]="depositFormControl"
+                        [errorStateMatcher]="matcher">
+                    <mat-error *ngIf="depositFormControl.hasError('maxLength')">
+                        {{'validAmount' | translate}}
+                    </mat-error>
+                    <mat-error *ngIf="depositFormControl.hasError('required')">
+                        {{'Amountis' | translate}} <strong>{{'required' |translate}}</strong>
+                    </mat-error>
+                </mat-form-field>
+            </form>
+        </ng-container>
+        <button mat-raised-button color="primary" [disabled]="!depositFormControl.valid"
+            (click)="depositAmount(amount.value)">{{'Proceed' | translate}}</button>
+    </div>
+</div>

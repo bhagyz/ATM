@@ -1,0 +1,26 @@
+.btn-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 90px;
+    padding: 10px;
+    justify-content: center;
+    height: 100%;
+    margin: 50px;
+    .fast-circle {
+        width: 200px;
+        height: 200px;
+        .amount-txt {
+            font-size: 35px;
+            font-weight: 600;
+        }
+    }
+  }
+  .fast-header {
+    display: flex;
+    margin: 50px;
+    .fast-header-txt {
+        font-size: 3vw;
+        font-weight: 600;
+        color: #0a1271;
+    }
+  }

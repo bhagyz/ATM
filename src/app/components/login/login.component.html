@@ -1,0 +1,20 @@
+<div class="login-div">
+    <div class="login-form-div">
+    <h1 class="header-label">{{'EnterPin' | translate}}</h1>
+    <form class="login-form">
+        <mat-form-field appearance="outline" color="primary"  class="login-full-width">
+          <input #pin matInput type="number" class="input-style" [formControl]="pinFormControl" [errorStateMatcher]="matcher">
+          <mat-error *ngIf="pinFormControl.hasError('maxLength(4)')">
+            {{'validPin' | translate}}
+          </mat-error>
+          <mat-error *ngIf="pinFormControl.hasError('required')">
+            {{'PINis' | translate}} <strong>{{'required' | translate}}</strong>
+          </mat-error>
+        </mat-form-field>
+      </form> 
+        <button  mat-raised-button color="primary" [disabled]="!pinFormControl.valid"(click)="checkPin(pin.value)">{{'Proceed' | translate}}</button>
+    </div>       
+</div>
+<div id="dialogContainer">
+  <div id="cofirmDialog" #dialog></div>
+</div>

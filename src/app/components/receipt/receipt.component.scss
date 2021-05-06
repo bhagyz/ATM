@@ -1,0 +1,46 @@
+.account-div {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+.home-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    height: 100%;
+    margin: 50px;
+    .task-card {
+        border: 5px solid #0250ff;
+        width: 20vw;
+        height: 20vh;
+        background-color: #250f69;
+        border-radius: 50px;
+        margin: 10px;
+        .task-txt {
+            display: flex;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            margin-top: 25px;
+            align-content: center;
+            justify-content: center;
+        }
+        .task-icon {
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+.fast-header {
+    display: flex;
+    margin: 50px;
+    .fast-header-txt {
+        font-size: 3vw;
+    font-weight: 600;
+    color: #0a1271;
+    }
+  }

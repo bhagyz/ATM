@@ -1,0 +1,37 @@
+.welcome-div {
+    display: flex;
+    justify-content: center;
+    margin: 220px 0px 0px 0px;
+    .welcome-txt {
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+        font-size: 9vw;
+        font-weight: 600;
+        color: #0a1271;
+    }
+}
+.btn-welcome-lang-div {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 120px;
+    color: #0a1271;
+    font-size: 25px;
+    font-weight: 500;
+    .btn-lang {
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+        width: 15%;
+        height: 5%;
+        padding: 10px;
+    }
+    .lang-label {
+        color: #0a1271;
+        font-size: 3vw;
+        font-weight: 500;
+    }
+}

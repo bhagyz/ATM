@@ -1,0 +1,32 @@
+<div class="account-div">
+    <div class="fast-header">
+        <span class="fast-header-txt">{{'SelectAccountType' | translate}}</span>
+    </div>
+    <div class="home-div">
+        <mat-card class="task-card" (click)="navigate('savetree')">
+            <div>
+                <i class="fa fa-tree fa-5x task-icon" aria-hidden="true"></i>
+                <span class="task-txt">{{'SaveTree' | translate}}</span>
+            </div>
+        </mat-card>
+        
+        <mat-card class="task-card" (click)="navigate('print')">
+            <a href="../../../assets/ATM_Receipt.pdf" download>
+            <div>
+    
+                <i class="fa fa-print fa-5x task-icon" aria-hidden="true"></i>
+    
+                <span class="task-txt">{{'Print' | translate}}</span>
+            </div>
+        </a>
+        </mat-card>
+        <mat-card class="task-card" (click)="navigate('transaction')">
+            <div>
+    
+                <i class="fa fa-university fa-5x task-icon" aria-hidden="true"></i>
+    
+                <span class="task-txt">{{'AnotherTransaction' | translate}}</span>
+            </div>
+        </mat-card>
+    </div>
+    </div>

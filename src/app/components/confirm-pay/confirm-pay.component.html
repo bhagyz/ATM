@@ -1,0 +1,15 @@
+<div class="fast-header">
+    <span class="fast-header-txt">{{'PleaseConfirm' | translate}}</span>
+</div>
+<div class="confirm-pay">
+    <div class="confirm-pay-div"><span class="confirm-pay-span">{{'AccountType' | translate}}</span> : <span
+            class="confirm-pay-span">{{accountType | translate}}</span></div>
+    <div class="confirm-pay-div"><span class="confirm-pay-span">{{'AmountEntered' | translate}}</span> : <span
+            class="confirm-pay-span">AED {{enteredAmount}}</span></div>
+    <div class="confirm-pay_btn_div">
+        <button class="confirm-pay_btn" mat-raised-button color="primary" (click)="navigate('back')">{{'Back' |
+            translate}}</button>
+        <button class="confirm-pay_btn" mat-raised-button color="primary" (click)="navigate('confirm')">{{'Confirm' |
+            translate}}</button>
+    </div>
+</div>

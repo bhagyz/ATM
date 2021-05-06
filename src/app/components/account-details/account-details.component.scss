@@ -1,0 +1,48 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #2e32b1;
+    text-align: left;
+    padding: 8px;
+    color: #ffff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #2e32b1;
+  }
+  tr:nth-child(odd) {
+    background-color: #01010e;
+  }
+
+  .header-label {
+    color: #2e32b1;
+    font-size: 25px;
+    font-weight: 600;
+}
+.account-div {
+    display: flex;
+    flex-direction: column;
+    margin: 300px 15px 0px 14px;
+}
+ .dwl-btn {
+    margin: 20px;
+    float: right;
+    .dwl {
+      padding: 8px;
+    }
+ }
+ .confirm-pay_btn_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  .confirm-pay_btn {
+      width: 30%;
+      height: 40px;
+      margin: 25px;
+  }
+}

@@ -1,0 +1,42 @@
+<div class="account-div">
+    <h1 class="header-label">{{'AccountDetails' | translate}}</h1>
+    <table>
+        <tr>
+            <th>User Name</th>
+            <th>Account Branch</th>
+            <th>Account Type</th>
+            <th>Account Number</th>
+            <th>Account Balance</th>
+            <th>Contact Number</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Dubai</td>
+            <td>Savings</td>
+            <td>00987654321</td>
+            <td>10000 AED</td>
+            <td>0526816353</td>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Dubai</td>
+            <td>Savings</td>
+            <td>00987655556</td>
+            <td>7000 AED</td>
+            <td>0526816353</td>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Dubai</td>
+            <td>Current</td>
+            <td>00987600321</td>
+            <td>90000 AED</td>
+            <td>0526816353</td>
+        </tr>
+    </table>
+</div>
+<a mat-raised-button class="dwl-btn" color="primary" href="./../../../assets/details.pdf" download="details.pdf"><i class="fa fa-download dwl" aria-hidden="true"></i>{{'DownloadFile' | translate}}</a>
+<div class="confirm-pay_btn_div">
+    <button class="confirm-pay_btn"  mat-raised-button color="primary" (click)="navigate('back')">{{'AnotherTransaction' | translate}}</button>
+    <button class="confirm-pay_btn" mat-raised-button color="primary" (click)="navigate('confirm')">{{'Done' | translate}}</button>
+</div>

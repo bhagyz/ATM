@@ -1,0 +1,38 @@
+.fast-header {
+    display: flex;
+    margin: 50px;
+    .fast-header-txt {
+        font-size: 3vw;
+        font-weight: 600;
+        margin: 50px;
+        color: #0a1271;
+    }
+  }
+.confirm-pay {
+    display: flex;
+    margin-top: 190px;
+    padding: 20px;
+    flex-direction: column;
+    .confirm-pay-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+        .confirm-pay-span {
+            font-weight: 700;
+            font-size: 30px;
+            color: #131669;
+        }
+    }
+    .confirm-pay_btn_div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        .confirm-pay_btn {
+            width: 30%;
+            height: 40px;
+            margin: 25px;
+        }
+    }
+}
